@@ -1,0 +1,8 @@
+DirectoryIndex index.php index.html
+Options -Indexes
+<FilesMatch "^(config\.php|schema\.php|seed\.json|README\.txt|RAILWAY\.txt|railway\.json|railway-init\.php|railway-start\.sh|Dockerfile)$">
+Require all denied
+</FilesMatch>
+<Files "index.html">
+Require all denied
+</Files>
